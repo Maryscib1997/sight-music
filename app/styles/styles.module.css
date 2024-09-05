@@ -1,0 +1,159 @@
+/* Stile per il contenitore */
+.container {
+  text-align: center;
+  background-color: #ebebeb;
+  font-family: Helvetica, sans-serif;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  margin-top: 60px; 
+}
+
+.heading {
+  margin-bottom: 20px; /* Spazio tra h1 e le card */
+  text-align: center;
+}
+
+.heading.h1 {
+  font-size: 3.5em; /* Dimensione di h1 */
+}
+
+.heading.h2 {
+  font-size: 1.8em; /* Dimensione di h2 */
+}
+
+/* Testo sopra l'immagine */
+.imageText {
+  position: absolute; 
+  align-items: center;
+  top: 80%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 40px; 
+  font-weight: bold; 
+  padding: 10px;
+  border-radius: 8px; 
+}
+
+
+.logo {
+  height: 750px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Media query per tablet */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navList {
+    flex-direction: column;
+  }
+
+  .navItem {
+    padding: 8px;
+  }
+
+  .logo {
+    height: 400px;
+  }
+
+  .imageText {
+    font-size: 20px;
+    top: 60%;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .paragraph {
+    width: 90%;
+  }
+
+  .contactForm {
+    flex-direction: column;
+  }
+
+  .formGroup {
+    max-width: 100%;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}
+
+/* Media query per smartphone */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .navList {
+    flex-direction: column;
+  }
+
+  .navItem {
+    padding: 5px;
+  }
+
+  .logo {
+    height: 300px;
+  }
+
+  .imageText {
+    font-size: 16px;
+    top: 50%;
+  }
+
+  .cardContainer {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footerNav .navItem {
+    margin: 3px;
+  }
+
+  .contactForm {
+    padding: 10px;
+  }
+
+  .formGroup {
+    max-width: 100%;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}
